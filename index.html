@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width	, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Favicon meta tags -->
+    <meta name="msapplication-TileColor" content="#2b5797" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Mentally Me</title>
+    <!-- Favicon and manifest -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0039cb" />
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS reset  -->
+    <link rel="stylesheet" href="/src/css/cssreset.css" />
+    <!-- Main stylesheets -->
+    <link rel="stylesheet" href="/src/css/grid.css" />
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <!-- Particle.js -->
+    <link href="http://www.jsdelivr.com/#!particles.js" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav-bar">
+        <ul>
+          <li class="nav-link"><a class="nav-item" href="#">About</a></li>
+          <li class="nav-link"><a class="nav-item" href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <h1 class="main-heading text-center">mentally me</h1>
+
+    <!-- Brain hemisphere background image -->
+    <img class="background-img-left" src="/src/assets/Asset 1.svg" alt="" />
+    <img class="background-img-right" src="/src/assets/Asset 2.svg" alt="" />
+
+    <div class="mobile">
+      <div class="button">
+        <ul>
+          <li class="button-item"><a href="#">Login</a></li>
+          <li class="button-item"><a href="#">Register</a></li>
+        </ul>
+      </div>
+
+      <footer>
+        <nav class="text-center">
+          <ul>
+            <li class="social-item">
+              <a href="https://www.instagram.com/mentally.me" target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </li>
+            <li class="social-item">
+              <a href="https://www.twitter.com/MentallyisMe" target="_blank"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </li>
+          </ul>
+          <p>
+            <span>Made with <i class="fas fa-heart"></i> for all</span>
+          </p>
+        </nav>
+
+        <ul class="legal">
+          <li class="conduct">
+            <a class="terms" href="conduct.html" target="_blank"
+              >Code of Conduct</a
+            >
+          </li>
+          <li class="privacy">
+            <a class="terms" href="privacy.html" target="_blank"
+              >Privacy Policy</a
+            >
+          </li>
+          <li class="service-terms">
+            <a class="terms" href="./terms.html" target="_blank">Terms</a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+
+    <!-- Desktop version of site(Will be hidden on smaller device vies) -->
+    <div class="desktop hidden">
+      <div class="button">
+        <ul>
+          <li class="button-item"><a href="#">Login</a></li>
+          <li class="button-item"><a href="#">Register</a></li>
+        </ul>
+      </div>
+
+      <footer>
+        <nav class="text-center">
+          <ul>
+            <li class="social-item">
+              <a href="https://www.instagram.com/mentally.me" target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </li>
+            <li class="social-item">
+              <a href="https://www.twitter.com/MentallyisMe" target="_blank"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </li>
+          </ul>
+          <p>
+            <span>Made with <i class="fas fa-heart"></i> for all</span>
+          </p>
+        </nav>
+
+        <ul class="legal">
+          <li class="conduct">
+            <a class="terms" href="./conduct.html" target="_blank"
+              >Code of Conduct</a
+            >
+          </li>
+          <li class="privacy">
+            <a class="terms" href="./privacy.html" target="_blank"
+              >Privacy policy</a
+            >
+          </li>
+          <li class="service-terms">
+            <a class="terms" href="./terms.html" target="_blank">Terms</a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+
+    <div id="particles-js"></div>
+    <!-- FontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/c2bfd5b3c1.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Animated background particles -->
+    <script src="/src/js/particles.min.js"></script>
+    <script src="/src/js/app.js"></script>
+    <!-- JavaScript -->
+    <script src="/src/js/index.js"></script>
+  </body>
+</html>

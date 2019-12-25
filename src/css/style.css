@@ -154,6 +154,19 @@ h6 {
   transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 } */
 
+.mission {
+  background-color: white;
+  bottom: 180px;
+  height: 50%;
+  left: 10%;
+  margin: 3px 15px;
+  overflow-y: scroll;
+  padding: 20px;
+  position: absolute;
+  width: 60%;
+  z-index: 10;
+}
+
 /* Footer */
 footer {
   bottom: 40px;

@@ -159,10 +159,11 @@ h6 {
   bottom: 180px;
   height: 50%;
   left: 10%;
-  margin: 5px 15px;
+  margin: 0 auto;
   overflow-y: scroll;
+  padding: 15px;
   position: absolute;
-  width: 60%;
+  width: 70%;
   z-index: 10;
 }
 

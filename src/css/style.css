@@ -159,9 +159,8 @@ h6 {
   bottom: 180px;
   height: 50%;
   left: 10%;
-  margin: 3px 15px;
+  margin: 5px 15px;
   overflow-y: scroll;
-  padding: 20px;
   position: absolute;
   width: 60%;
   z-index: 10;
@@ -379,10 +378,9 @@ footer p {
 
   .mission {
     background-color: white;
-    bottom: 250px;
+    bottom: 200px;
     left: 23%;
-    margin: 3px 15px;
-    padding: 20px;
+    margin: 3px;
     position: absolute;
     width: 50%;
     z-index: 10;

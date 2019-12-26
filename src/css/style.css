@@ -234,14 +234,18 @@ footer p {
 }
 
 /* Media query to hide desktop version of site */
-@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .desktop {
     display: none;
   }
 }
 
 /* Style tweaks for tablets */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .mobile {
+    display: none;
+  }
+
   #title-heading {
     color: #ffffff;
     text-decoration: none;
@@ -303,10 +307,21 @@ footer p {
     background-color: #ffffff;
     color: #000000;
   }
+
+  .desktop-mission {
+    background-color: white;
+    bottom: 35%;
+    left: 23%;
+    margin: 3px;
+    padding: 15px;
+    position: absolute;
+    width: 50%;
+    z-index: 10;
+  }
 }
 
 /* Desktop and larger screen style rules */
-@media only screen and (min-device-width: 1200px) {
+@media only screen and (min-device-width: 1024px) {
   .mobile {
     display: none;
   }

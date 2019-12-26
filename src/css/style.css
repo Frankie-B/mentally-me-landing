@@ -44,6 +44,11 @@ h6 {
   text-decoration: none;
 }
 
+#title-heading {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 /* Background img */
 .background-img-left {
   background: url('/src/assets/Asset\ 1.svg');
@@ -235,6 +240,71 @@ footer p {
   }
 }
 
+/* Style tweaks for tablets */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  #title-heading {
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  .background-img-left {
+    background: url('/src/assets/Asset\ 1.svg');
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 40%;
+    margin-top: 10%;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .background-img-right {
+    background: url('/src/assets/Asset\ 2.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 40%;
+    margin-left: 74.5%;
+    margin-top: 10%;
+    position: absolute;
+    z-index: 1;
+  }
+
+  /* Login and sign up buttons */
+  .button {
+    align-items: center;
+    display: grid;
+    height: 50px;
+    position: absolute;
+    text-align: right;
+    transition: 0.2s ease all;
+    width: 100%;
+  }
+
+  .button ul {
+    margin-bottom: -90%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .button-item {
+    display: inline-block;
+    margin: 0 auto;
+  }
+
+  .button-item a {
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    padding: 3px 15px;
+    text-decoration: none;
+  }
+
+  .button-item a:hover {
+    background-color: #ffffff;
+    color: #000000;
+  }
+}
+
 /* Desktop and larger screen style rules */
 @media only screen and (min-device-width: 1200px) {
   .mobile {
@@ -294,6 +364,11 @@ footer p {
     font-size: 2.5rem;
     font-weight: 700;
     margin-top: 5%;
+  }
+
+  #title-heading {
+    color: #ffffff;
+    text-decoration: none;
   }
 
   /* Login and sign up buttons */

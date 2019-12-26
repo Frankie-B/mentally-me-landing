@@ -376,11 +376,12 @@ footer p {
     transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
   } */
 
-  .mission {
+  .desktop-mission {
     background-color: white;
     bottom: 200px;
     left: 23%;
     margin: 3px;
+    padding: 15px;
     position: absolute;
     width: 50%;
     z-index: 10;

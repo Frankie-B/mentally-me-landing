@@ -19,8 +19,6 @@
       href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <!-- CSS reset  -->
-    <link rel="stylesheet" href="/src/css/cssreset.css" />
     <!-- Main stylesheets -->
     <link rel="stylesheet" href="/src/css/grid.css" />
     <link rel="stylesheet" href="/src/css/style.css" />
@@ -28,15 +26,6 @@
     <link href="http://www.jsdelivr.com/#!particles.js" />
   </head>
   <body>
-    <!-- <header>
-      <nav class="nav-bar">
-        <ul>
-          <li class="nav-link"><a class="nav-item" href="#">About</a></li>
-          <li class="nav-link"><a class="nav-item" href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </header> -->
-
     <h1 class="main-heading text-center">
       <a id="title-heading" href="#">Mentally.me</a>
     </h1>
@@ -45,34 +34,34 @@
     <img class="background-img-left" src="/src/assets/Asset 1.svg" alt="" />
     <img class="background-img-right" src="/src/assets/Asset 2.svg" alt="" />
 
-    <div class="mobile">
-      <div class="button">
-        <ul>
-          <li class="button-item ">
-            <a class="trigger" href="./mission.html">Learn More</a>
-          </li>
-        </ul>
+    <div>
+      <div class="button-container">
+        <button class="button-item trigger">Learn More</button>
       </div>
 
-      <!-- <div class="modal">
+      <div class="modal">
         <div class="modal-content">
           <span class="close-button">&times;</span>
+          <br>
+          <br>
           <p>
             At the heart of Mentally.me is a simple idea.
             <br />
             <br />
-
-            KIND WORDS. We live in a very interconnected world and yet at the
-            same time for a lot of people that means feeling even more isolated.
-            But what if at its core a platform existed that aimed to put people
-            and human connection first. What if the idea of helping someone
-            undergoing difficulties, struggling through hard times, or needing
-            someone to talk to was built into the core of a platform? We all go
-            through ups and downs, and we all should have someone who is in our
-            corner, to share those experiences with. We should feel like we can
-            be our authentic self, in a world that asks us to curate so much of
-            our lives all the time. Sometimes a kind word from a stranger can be
-            the deciding factor that turns another person's day around.
+            KIND WORDS.
+            <br />
+            <br />
+            We live in a very interconnected world and yet at the same time for
+            a lot of people that means feeling even more isolated. But what if
+            at its core a platform existed that aimed to put people and human
+            connection first. What if the idea of helping someone undergoing
+            difficulties, struggling through hard times, or needing someone to
+            talk to was built into the core of a platform? We all go through ups
+            and downs, and we all should have someone who is in our corner, to
+            share those experiences with. We should feel like we can be our
+            authentic self, in a world that asks us to curate so much of our
+            lives all the time. Sometimes a kind word from a stranger can be the
+            deciding factor that turns another person's day around.
             <br />
             <br />
             One of the primary goals of Mentally.me is to offer a simpler
@@ -84,11 +73,10 @@
             better someone's day is a kind word.
             <br />
             <br />
-
             So, let's brave the storm together.
           </p>
         </div>
-      </div> -->
+      </div>
 
       <footer>
         <nav class="text-center">
@@ -100,7 +88,7 @@
             </li>
             <li class="social-item">
               <a href="https://www.twitter.com/MentallyisMe" target="_blank"
-                ><i class="fab fa-twitter"></i
+                ><i id="twitter" class="fab fa-twitter"></i
               ></a>
             </li>
           </ul>
@@ -118,83 +106,6 @@
           <li class="privacy">
             <a class="terms" href="privacy.html" target="_blank"
               >Privacy Policy</a
-            >
-          </li>
-          <li class="service-terms">
-            <a class="terms" href="./terms.html" target="_blank">Terms</a>
-          </li>
-        </ul>
-      </footer>
-    </div>
-
-    <!-- Desktop version of site(Will be hidden on smaller device vies) -->
-    <div class="desktop hidden">
-      <div class="button">
-        <ul>
-          <li class="button-item trigger">
-            <a href="./mission.html">Learn More</a>
-          </li>
-        </ul>
-      </div>
-
-      <!-- <div class="modal">
-        <div class="modal-content">
-          <span class="close-button">&times;</span>
-          <p>
-            At the heart of Mentally.me is a simple idea. KIND WORDS. We live in
-            a very interconnected world and yet at the same time for a lot of
-            people that means feeling even more isolated. But what if at its
-            core a platform existed that aimed to put people and human
-            connection first. What if the idea of helping someone undergoing
-            difficulties, struggling through hard times, or needing someone to
-            talk to was built into the core of a platform? We all go through ups
-            and downs, and we all should have someone who is in our corner, to
-            share those experiences with. We should feel like we can be our
-            authentic self, in a world that asks us to curate so much of our
-            lives all the time. Sometimes a kind word from a stranger can be the
-            deciding factor that turns another person's day around.
-            <br />
-            <br />
-            One of the primary goals of Mentally.me is to offer a simpler
-            platform where people can share how they feel, (the good and the
-            bad) and to allow others to be there for others. We feel it is time
-            we try and change the sort of conversations we have with ourselves
-            and with each other online. To offer a place where people can find a
-            connection, community, and compassion. Sometimes all it takes to
-            better someone's day is a kind word. So, let's brave the storm
-            together.
-          </p>
-        </div>
-      </div> -->
-
-      <footer>
-        <nav class="text-center">
-          <ul>
-            <li class="social-item">
-              <a href="https://www.instagram.com/mentally.me" target="_blank"
-                ><i class="fab fa-instagram"></i
-              ></a>
-            </li>
-            <li class="social-item">
-              <a href="https://www.twitter.com/MentallyisMe" target="_blank"
-                ><i class="fab fa-twitter"></i
-              ></a>
-            </li>
-          </ul>
-          <p>
-            <span>Made with <i class="fas fa-heart"></i> for all</span>
-          </p>
-        </nav>
-
-        <ul class="legal">
-          <li class="conduct">
-            <a class="terms" href="./conduct.html" target="_blank"
-              >Code of Conduct</a
-            >
-          </li>
-          <li class="privacy">
-            <a class="terms" href="./privacy.html" target="_blank"
-              >Privacy policy</a
             >
           </li>
           <li class="service-terms">

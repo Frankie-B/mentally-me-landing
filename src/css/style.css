@@ -1,4 +1,3 @@
-/* Global */
 html,
 body {
   background: linear-gradient(30deg, #0039cb, #dc39fa);
@@ -22,26 +21,8 @@ h6 {
 .particles-js {
   background-repeat: no-repeat;
   background-size: cover;
-  position: 50% 50%;
-}
-
-/* Navigation links */
-.nav-bar {
-  margin-top: 30px;
-  margin-right: 20px;
-  text-align: right;
-}
-
-.nav-link {
-  display: inline-block;
-}
-
-.nav-item {
-  color: #ffffff;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1rem;
-  margin: 0 50px 0 30px;
-  text-decoration: none;
+  position: absolute;
+  top: 70%;
 }
 
 #title-heading {
@@ -50,25 +31,24 @@ h6 {
 }
 
 /* Background img */
-.background-img-left {
-  background: url('/src/assets/Asset\ 1.svg');
+.background-img-left,
+.background-img-right {
   background-repeat: no-repeat;
-  background-position: left;
   height: 40%;
   margin-top: 10%;
   position: absolute;
   z-index: 1;
 }
 
+.background-img-left {
+  background: url('/src/assets/Asset\ 1.svg');
+  background-position: left;
+}
+
 .background-img-right {
   background: url('/src/assets/Asset\ 2.svg');
-  background-repeat: no-repeat;
   background-position: right;
-  height: 40%;
-  margin-left: 66%;
-  margin-top: 10%;
-  position: absolute;
-  z-index: 1;
+  right: 0;
 }
 
 /* Main heading */
@@ -79,45 +59,59 @@ h6 {
 }
 
 /* Login and sign up buttons */
-.button {
+.button-container {
+  position: relative;
+}
+
+button {
   align-items: center;
-  display: grid;
-  height: 50px;
-  text-align: right;
-  transition: 0.2s ease all;
-  width: 100%;
-}
-
-.button ul {
-  margin-bottom: -160%;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.button-item {
-  display: inline-block;
-  margin-right: 5px;
-}
-
-.button-item a {
+  background: transparent;
   border: 1px solid #ffffff;
   color: #ffffff;
+  display: grid;
+  height: 50px;
+  left: 0;
+  margin: auto;
+  margin-top: 80%;
+  position: absolute;
+  padding: 3px 15px;
+  right: 0;
+  text-align: right;
+  transition: 0.2s ease all;
+}
+
+button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+button a {
   font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
   padding: 3px 15px;
   text-decoration: none;
 }
 
-.button-item a:hover {
-  background-color: #ffffff;
+button a:hover {
   color: #000000;
 }
 
-/* TODO - FIX modal styling */
+.button-item a {
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  padding: 15px;
+  text-decoration: none;
+}
+
+.button-item a:hover {
+  /* background-color: #ffffff; */
+  color: #000000;
+}
 
 /* Styling for Modal */
 
-/* .modal {
+.modal {
   position: fixed;
   left: 0;
   top: 0;
@@ -137,7 +131,9 @@ h6 {
   transform: translate(-50%, -50%);
   background-color: white;
   padding: 1rem 1.5rem;
-  width: 24rem;
+  width: 15rem;
+  height: 26rem;
+  overflow-y: scroll;
   border-radius: 0.5rem;
 }
 .close-button {
@@ -157,35 +153,19 @@ h6 {
   visibility: visible;
   transform: scale(1);
   transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
-} */
-
-.mission {
-  background-color: white;
-  bottom: 180px;
-  height: 50%;
-  left: 10%;
-  margin: 0 auto;
-  overflow-y: scroll;
-  padding: 15px;
-  position: absolute;
-  width: 70%;
-  z-index: 10;
 }
 
 /* Footer */
 footer {
   bottom: 40px;
-  right: 20%;
-  left: 20%;
+  margin: auto;
+  right: 0;
+  left: 0;
   position: absolute;
 }
 
-.social-item {
+li.social-item {
   display: inline-block;
-  font-size: 1rem;
-  margin-bottom: 40px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .fa-instagram,
@@ -193,14 +173,21 @@ footer {
   color: #ffffff;
   font-size: 1.75rem;
   margin-right: 10px;
-  margin-left: 10px;
+  margin-left: 30px;
+  margin-bottom: 50px;
   z-index: 10;
+}
+
+nav ul li:nth-child(2) {
+  margin-right: 22%;
 }
 
 footer p {
   color: white;
   font-family: 'Open Sans', sans-serif;
+  margin: 0 auto;
   margin-top: 10px;
+  margin-bottom: 40px;
 }
 
 /* Heart icon */
@@ -212,6 +199,10 @@ footer p {
   display: inline-block;
 }
 
+ul.legal {
+  list-style: none;
+}
+
 .terms {
   color: #ffffff;
   font-family: 'Open Sans', sans-serif;
@@ -219,214 +210,47 @@ footer p {
 }
 
 .conduct {
-  left: -30px;
+  left: 30px;
   position: absolute;
 }
 
 .privacy {
   position: absolute;
-  right: -30px;
+  right: 30px;
 }
 
 .service-terms {
   position: absolute;
-  right: 85px;
+  right: 135px;
 }
 
-/* Media query to hide desktop version of site */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  .desktop {
-    display: none;
-  }
-}
-
-/* Style tweaks for tablets */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-  .mobile {
-    display: none;
-  }
-
+/* Tablet styling for button */
+@media only screen and (min-device-width: 768px) {
   #title-heading {
-    color: #ffffff;
-    text-decoration: none;
+    margin-top: 35%;
   }
 
-  .background-img-left {
-    background: url('/src/assets/Asset\ 1.svg');
-    background-repeat: no-repeat;
-    background-position: left;
-    height: 40%;
-    margin-top: 10%;
-    position: absolute;
-    z-index: 1;
+  .button-container {
+    position: relative;
   }
 
-  .background-img-right {
-    background: url('/src/assets/Asset\ 2.svg');
-    background-repeat: no-repeat;
-    background-position: right;
-    height: 40%;
-    margin-left: 74.5%;
-    margin-top: 10%;
-    position: absolute;
-    z-index: 1;
-  }
-
-  /* Login and sign up buttons */
-  .button {
+  button {
     align-items: center;
+    background: transparent;
+    border: 1px solid #ffffff;
     display: grid;
     height: 50px;
+    left: 0;
+    margin: auto;
+    margin-top: 40%;
     position: absolute;
-    text-align: right;
-    transition: 0.2s ease all;
-    width: 100%;
-  }
-
-  .button ul {
-    margin-bottom: -90%;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  .button-item {
-    display: inline-block;
-    margin: 0 auto;
-  }
-
-  .button-item a {
-    border: 1px solid #ffffff;
-    color: #ffffff;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.5rem;
-    padding: 3px 15px;
-    text-decoration: none;
-  }
-
-  .button-item a:hover {
-    background-color: #ffffff;
-    color: #000000;
-  }
-
-  .desktop-mission {
-    background-color: white;
-    bottom: 35%;
-    left: 23%;
-    margin: 3px;
-    padding: 15px;
-    position: absolute;
-    width: 50%;
-    z-index: 10;
-  }
-}
-
-/* Desktop and larger screen style rules */
-@media only screen and (min-device-width: 1024px) {
-  .mobile {
-    display: none;
-  }
-
-  /* Branding / Logo */
-  .logo {
-    height: 8%;
-    position: absolute;
-    top: 12%;
-    left: 6%;
-  }
-  /* Navigation links */
-  .nav-bar {
-    margin-top: 30px;
-    margin-right: 20px;
-    text-align: right;
-  }
-
-  .nav-link {
-    display: inline-block;
-  }
-
-  .nav-item {
-    color: #ffffff;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1rem;
-    margin: 0 50px 0 30px;
-    text-decoration: none;
-  }
-
-  /* Background img */
-  .background-img-left {
-    background: url('/src/assets/Asset\ 1.svg');
-    background-repeat: no-repeat;
-    background-position: left;
-    height: 60%;
-    margin-top: 5%;
-    position: absolute;
-    z-index: 1;
-  }
-
-  .background-img-right {
-    background: url('/src/assets/Asset\ 2.svg');
-    background-repeat: no-repeat;
-    background-position: right;
-    height: 60%;
     right: 0;
-    margin-top: 5%;
-    position: absolute;
-    z-index: 1;
-  }
-
-  /* Main heading */
-  .main-heading {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-top: 5%;
-  }
-
-  #title-heading {
-    color: #ffffff;
-    text-decoration: none;
-  }
-
-  /* Login and sign up buttons */
-  .button {
-    align-items: center;
-    display: grid;
-    height: 50px;
-    position: absolute;
     text-align: right;
     transition: 0.2s ease all;
-    width: 100%;
+    z-index: 20;
   }
 
-  .button ul {
-    margin-bottom: -30%;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  .button-item {
-    display: inline-block;
-    margin: 0 auto;
-  }
-
-  .button-item a {
-    border: 1px solid #ffffff;
-    color: #ffffff;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.5rem;
-    padding: 3px 15px;
-    text-decoration: none;
-  }
-
-  .button-item a:hover {
-    background-color: #ffffff;
-    color: #000000;
-  }
-
-  /* TODO - FIX styling for this modal too */
-
-  /* Styling for Modal */
-
-  /* .modal {
+  .modal {
     position: fixed;
     left: 0;
     top: 0;
@@ -437,7 +261,9 @@ footer p {
     visibility: hidden;
     transform: scale(1.1);
     transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+    z-index: 20;
   }
+
   .modal-content {
     position: absolute;
     top: 50%;
@@ -447,6 +273,7 @@ footer p {
     padding: 1rem 1.5rem;
     width: 24rem;
     border-radius: 0.5rem;
+    z-index: 20;
   }
   .close-button {
     float: right;
@@ -465,32 +292,19 @@ footer p {
     visibility: visible;
     transform: scale(1);
     transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
-  } */
-
-  .desktop-mission {
-    background-color: white;
-    bottom: 200px;
-    left: 23%;
-    margin: 3px;
-    padding: 15px;
-    position: absolute;
-    width: 50%;
-    z-index: 10;
   }
+
   /* Footer */
   footer {
-    bottom: 40px;
-    right: 20%;
-    left: 20%;
+    bottom: 30px;
+    margin: auto;
+    right: 0;
+    left: 0;
     position: absolute;
   }
 
-  .social-item {
+  li.social-item {
     display: inline-block;
-    font-size: 1rem;
-    margin-bottom: 40px;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .fa-instagram,
@@ -498,51 +312,72 @@ footer p {
     color: #ffffff;
     font-size: 1.75rem;
     margin-right: 10px;
-    margin-left: 10px;
+    margin-left: 30px;
+    margin-bottom: 250%;
     z-index: 10;
   }
 
-  .fa-instagram:hover {
-    color: #0939cb;
-  }
-
-  .fa-twitter:hover {
-    color: #0939cb;
+  nav ul li:nth-child(2) {
+    margin-right: 9%;
   }
 
   footer p {
     color: white;
     font-family: 'Open Sans', sans-serif;
-    margin-top: 10px;
+    margin: 0 auto;
+    margin-top: 60px;
+  }
+}
+
+/* Desktop screen styling rules */
+@media only screen and (min-device-width: 1024px) {
+  button {
+    align-items: center;
+    background: transparent;
+    border: 1px solid #ffffff;
+    display: grid;
+    height: 50px;
+    left: 0;
+    margin: auto;
+    margin-top: 20%;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    transition: 0.2s ease all;
+    z-index: 20;
   }
 
-  /* Heart icon */
-  .fa-heart {
-    color: #ef4b64;
+  /* Footer */
+  footer {
+    bottom: 30px;
+    margin: auto;
+    right: 0;
+    left: 0;
+    position: absolute;
   }
 
-  .legal {
+  li.social-item {
     display: inline-block;
   }
 
-  .terms {
+  .fa-instagram,
+  .fa-twitter {
     color: #ffffff;
+    font-size: 1.75rem;
+    margin-right: 10px;
+    margin-left: 30px;
+    margin-bottom: 50px;
+    z-index: 10;
+  }
+
+  nav ul li:nth-child(2) {
+    margin-right: 4%;
+  }
+
+  footer p {
+    color: white;
     font-family: 'Open Sans', sans-serif;
-    font-size: 0.75rem;
-  }
-
-  .conduct {
-    left: -30px;
-    position: absolute;
-  }
-
-  .privacy {
-    position: absolute;
-    right: -30px;
-  }
-
-  .service-terms {
-    position: absolute;
-    right: 70px;
+    margin: 0 auto;
+    margin-top: 60px;
   }
 }
